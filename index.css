@@ -6,13 +6,3 @@ body{
   font-family:'Comic Sans MS', Georgia;
   font-size: 20px;
 }
-
-#button1{
-  padding:10px;
-  border-radius:5px;
-  background-color:#aaaaff;
-}
-
-#button1:hover{
-  background-color:#ffffaa;
-}
