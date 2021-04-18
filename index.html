@@ -8,6 +8,20 @@
         <title>On the Psychological Basis of Enneagram tests - Enneagram Type 6</title>
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+        <script>
+            function swapVideo() {
+                player.src = this.getAttribute("data-video-url");
+                player.load();
+                player.play();
+            }
+            var videoPlayButtons = document.querySelectorAll("button"),
+                player = document.getElementById("player");
+
+            for (var i=0; i<videoPlayButtons.length; i++){
+                videoPlayButtons[i].addEventListener('click', swapVideo);
+            }
+        </script>
+
     </head>
 
     <body>
@@ -15,6 +29,12 @@
             <section id = "section1" class = "section_class">
                 <h2> On the Psychological Basis of Enneagram tests - Enneagram Type 6 </h2>
                 <p> This section will continue to go into detail about the psychological basis of Enneagram tests specifically in relation to Enneagram Type 6 individuals. In Enneagram theory, which is considered by many to have <span class='a'>never</span> been a wholly scientifically-based theory, Type 6 individuals are those who are <span class='a'>gonna give</span> their all no matter what <span class='a'>you</span> or anyone say. In corporate situations, they climb <span class='a'>up</span> the ladder by being loyal to their friends and their colleagues. Those people are characterized by how they <span class='a'>never gonna let</span> everyone, including <span class='a'>you</span>, be attacked or put <span class='a'>down</span>. However, they can be very obstinate, <span class='a'>never</span> changing their mind once they have decided on something. They are <span class='a'>gonna</span> keep going even if everyone else decides to <span class='a'>turn around</span>, which means that they may not always be logical <span class='a'>and</span> calm. However, they will never <span class='a'>desert you</span>. Please scroll down for an example of the characterization of Enneagram Type 6.</p>
+                <div id="videoSelect">
+                    <button data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ?t=42">Play the video</button>
+                </div>
+                <video id="player" controls></video>
+
+
                 <iframe width="420" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?t=42"> </iframe>
             </section>
         </div>
