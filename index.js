@@ -13,4 +13,3 @@ window.addEventListener('load', (event) => {
         videoPlayButtons[i].addEventListener('click', generate_iframe);
     }
 });
-
