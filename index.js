@@ -6,6 +6,7 @@ function generate_iframe() {
     p.innerHTML="test";
 }
 
+// make sure that everything is loaded (only when everything is loaded, run the code)
 window.addEventListener('load', (event) => {
     var videoPlayButtons = document.querySelectorAll("button")
     for (var i=0; i<videoPlayButtons.length; i++){
