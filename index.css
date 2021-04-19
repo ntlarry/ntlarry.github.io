@@ -2,10 +2,10 @@ body{
   font-family:'Helvetica Neue', Arial;
 }
 
-.a:hover{
+/* .a:hover{
   font-family:'Comic Sans MS', Georgia;
   font-size: 20px;
-}
+} */
 
 #button1{
   padding:10px;
