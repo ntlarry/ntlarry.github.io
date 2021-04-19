@@ -13,7 +13,7 @@ function generate_iframe() {
 var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
 
 if(isSafari === false){
-    document.body.innerHTML = "";
+    document.getElementById("section1").innerHTML = "";
     document.open();
     document.write("Only Safari is supported for now. Sorry for the inconvenience!");
     document.close();
