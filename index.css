@@ -15,6 +15,15 @@ body{
   top: -1px;
 }
 
+.b{
+  font-family:'Comic Sans MS', Georgia;
+  font-size: 20px;
+  position: relative;
+  letter-spacing:0.5px;
+  top: -1px;
+  font-color:#0095ff;
+}
+
 #button1{
   padding:10px;
   border-radius:5px;
@@ -25,3 +34,5 @@ body{
 #button1:hover{
   background-color:#ffffaa;
 }
+
+
