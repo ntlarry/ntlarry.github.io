@@ -7,6 +7,14 @@ body{
   font-size: 20px;
 } */
 
+.a:hover{
+  font-family:'Comic Sans MS', Georgia;
+  font-size: 14.9px;
+  position: relative;
+  letter-spacing:0.5px;
+  top: -1px;
+}
+
 #button1{
   padding:10px;
   border-radius:5px;
