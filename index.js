@@ -12,18 +12,19 @@ function generate_iframe() {
 // Detect if safari, if not, will break. Source: https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
 var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
 
-if(isSafari === false){
-    document.getElementById("section1").innerHTML = "";
-    document.open();
-    document.write("Only Safari is supported for now. Sorry for the inconvenience!");
-    document.close();
-}
-else{
-    // make sure that everything is loaded (only when everything is loaded, run the code)
-    window.addEventListener('load', (event) => {
+// make sure that everything is loaded (only when everything is loaded, run the code)
+window.addEventListener('load', (event) => {
+    if(isSafari === false){
+        document.getElementById("section1").innerHTML = "";
+        document.open();
+        document.write("Only Safari is supported for now. Sorry for the inconvenience!");
+        document.close();
+    }
+    else{
         var videoPlayButtons = document.querySelectorAll("button")
         for (var i=0; i<videoPlayButtons.length; i++){
             videoPlayButtons[i].addEventListener('click', generate_iframe);
         }
-    });
-}
+    }
+});
+
